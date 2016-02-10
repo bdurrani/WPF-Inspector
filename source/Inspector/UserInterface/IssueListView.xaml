@@ -26,14 +26,14 @@
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Inspector;component/Images/information.png" Height="14" />
                     <TextBlock Margin="4,0,0,0" Text="{Binding Messages}" />
-                    <TextBlock Margin="4,0,0,0" Text="Informations" />
+                    <TextBlock Margin="4,0,0,0" Text="Messages" />
                 </StackPanel>
             </ToggleButton>
             <Button Margin="16,0,0,0" Command="{Binding ConfigureAnalyzersCommand}"  >
                 <TextBlock Text="Configure Rules..." />
             </Button>
         </StackPanel>
-        
+
         <ListView Grid.Row="1" ItemsSource="{Binding Issues}" SelectionChanged="ListView_SelectionChanged" BorderThickness="0">
             <ListView.ContextMenu>
                 <ContextMenu>
@@ -65,5 +65,5 @@
             </ListView.View>
         </ListView>
     </Grid>
-    
+
 </UserControl>
